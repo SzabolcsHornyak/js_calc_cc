@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* 	{
+	box-sizing: border-box;
+	font: bold 5vmin 'Roboto', sans-serif;
+	}
+
+html {
+	height: 100%;
+	background: white;
+	background-image: url('./images/654644.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: cover;
+	}
+
+#calculator {
+	width: 90vmax;
+	height: auto;
+	margin: auto;
+	padding: 20px;
+	background: rgba(110, 110, 110, 0.8);
+	opacity: 0.95;
+	border-radius: 15px;
+	}
+
+.top span.clear {
+	float: left;
+	}
+
+.top .screen {
+	height: 11vmin;
+	width: 65%;
+	color: white;
+	padding: 3vh;
+	margin: 0 0 0 20vw;
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0.6);
+	}
+
+.bhide{
+	visibility: hidden;
+}
+
+.last_screen {
+	height: 11vmin;
+	width: 88%;
+	color: white;
+	padding: 3vh;
+	margin: 5px;
+	border-radius: 15px;
+	background: rgba(0, 0, 0, 0.6);
+	}
+	
+.keys, .top {overflow: hidden;}
+
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	cursor: pointer;
+	width: 19vw;
+	height: 11vmin;
+	background: white;
+	border-radius: 15px;
+	margin: 3px 7px 3px 0;
+	color: #888;
+	text-align: center;
+	padding: 3vh 0 0 0;
+	/* prevent selection of text inside keys */
+	user-select: none;
+	transition: all 0.2s ease;
+}
+
+.keys span.operator {
+	background: #ddd;
+}
+
+.keys span.eval {
+	background: #eee;
+}
+
+.top span.clear {
+	background: #ff9fa8;
+	color: white;
+}
+
+.keys span:hover {
+	background: #5fa301;
+	color: white;
+}
+
+.top span.clear:hover {
+	background: #ff002a;
+	color: white;
+}
+
+.keys span:active {
+	top: 4px;
+}
+
+.keys span.eval:active {
+	top: 4px;
+}
+
+.top span.clear:active {
+	top: 4px;
+}
